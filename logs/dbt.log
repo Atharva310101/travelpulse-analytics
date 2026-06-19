@@ -1,0 +1,30 @@
+[0m12:31:44.389233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE5B1B9DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE5A95A9F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE5AFA2CF0>]}
+
+
+============================== 12:31:44.394642 | 5b247554-dfa6-49ba-9b19-00ce9305299c ==============================
+[0m12:31:44.394642 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:31:44.395652 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\parga\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init dbt_project', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m12:31:44.414162 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\parga\.dbt
+[0m12:31:44.416161 [debug] [MainThread]: Starter project path: C:\Users\parga\Documents\travelpulse-analytics\venv\Lib\site-packages\dbt\include\starter_project
+[0m12:31:44.426659 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:31:44.429659 [info ] [MainThread]: Setting up your profile.
+[0m12:33:42.075047 [info ] [MainThread]: Profile dbt_project written to C:\Users\parga\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:33:42.077076 [debug] [MainThread]: Command `dbt init` succeeded at 12:33:42.076061 after 117.85 seconds
+[0m12:33:42.077076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7BD6C5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7E034410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE7DFC6B40>]}
+[0m12:33:42.078078 [debug] [MainThread]: Flushing usage events
+[0m12:33:42.641881 [debug] [MainThread]: An error was encountered while trying to flush usage events

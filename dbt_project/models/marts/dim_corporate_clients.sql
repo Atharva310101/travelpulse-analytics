@@ -1,0 +1,1 @@
+select * from {{ ref('stg_corporate_clients') }}

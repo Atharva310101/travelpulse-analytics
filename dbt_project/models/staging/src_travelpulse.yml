@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw_travelpulse
+    database: travelpulse-analytics # Replace this with your exact GCP Project ID if different
+    schema: raw_travelpulse
+    tables:
+      - name: dim_airports
+        description: Reference table containing US major airport codes, names, and locations.
+      - name: dim_airlines
+        description: Reference table mapping airline operational codes to full names.
+      - name: dim_corporate_clients
+        description: Detailed profiles of the corporate clients who book through our agency.
+      - name: fact_bookings
+        description: Transactional database records of passenger flights booked with our agency.

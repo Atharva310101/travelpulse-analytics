@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_corporate_clients
+    description: "The dimension table containing unique profiles of all corporate clients."
+    columns:
+      - name: client_id
+        description: "Primary key for corporate clients."
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_bookings
+    description: "The primary unified reporting fact table, combining bookings with client and location dimensions."
+    columns:
+      - name: booking_id
+        description: "Primary key identifying each individual transaction."
+        tests:
+          - unique
+          - not_null
+      - name: client_id
+        description: "Foreign key referencing the dim_corporate_clients table."
+        tests:
+          - not_null
+      - name: booking_window_category
+        description: "The calculated group indicating how far in advance the ticket was purchased."
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['Standard (14+ Days)', 'Short Notice (7-13 Days)', 'Last Minute (0-6 Days)']
